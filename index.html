@@ -1,93 +1,40 @@
 <!DOCTYPE html>
+
 <html>
+  <head>
+  ...
+  <style type="text/css">
+  #login {
+    display: none;
+  }
 
-<head>
-  <title>Sam's Sarnies</title>
-  <link href="dist/css/bootstrap.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
-
+  #loggedin {
+    display: none;
+  }
+  ...
+</style>
 <body>
-
-
-<div class='container'>
-    <div class='jumbotron'>
-      <div class="row">
-        <div class="col-md-4">
-          <h1>Healthy sandwiches for your team</h1>
-        </div>
-
-        <div class="col-md-8">
-          <img src='images/sandwich.png'>
-        </div>
-      </div>
-    <form role='form'>
-      <label for="email">Find out more</label>
-      <input type="text" name="email">
-      <button class='btn btn-lg'>Send</button>
-
-    </form>
+ <div>
+    <div id="login">
+     <h1>First, log in to spotify</h1>
+     <a href="/login">Log in</a>
     </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <h2><small>The Buzz</small><br />What are people saying?</h2>
-      </div>
+    <div id="loggedin">
     </div>
+ </div>
 
-      <div class="row">
-        <div class="col-md-4">
-          <div>
-            <img src='images/person.jpg' class="img text-center" class="img-circle">
-            <blockquote class="blockquote text-center">
-              <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-              <small>Mr Smith, Professional sandwich taster</small>
-            </blockquote>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div>
-            <img src='images/person.jpg' class="img-circle">
-            <blockquote class="blockquote text-center">
-              <p>My team are always far more productive after we order from Sam's. 40% more productive, in fact.</p>
-              <small>Miss McAdam, CEO Workplace Analytics</small>
-            </blockquote>
-
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div>
-            <img src='images/person.jpg' class="img-circle">
-            <blockquote class="blockquote text-center">
-              <p>We switched to Sam's Sarnies and won our first government contract the next day. Coincidence? I think not!</p>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div id="mission">
-        <h2><small>Our mission</small><br />Join us in helping busy professionals eat healthily</h2>
-
-        <p class="lead">We believe that healthy workers are more productive workers.</p>
-        <p class="lead">Providing your team with a healthy lunch each day improves both motivation and morale.</p>
-        <p class="lead">We deliver healthy sandwiches, made with the best ingredients, to your workplace every day.</p>
-
-      <div id='social-buttons'>
-        <button class='btn-twitter'>Twitter</button>
-        <button class='btn-facebook'>Facebook</button>
-        <button class='btn-pinterest'>Pinterest</button>
-      </div>
-    </div>
-</div>
-
-
+ <script id="loggedin-template" type="text/x-handlebars-template">
+    <h1>Logged in as </h1>
+    <img id="avatar" width="200" src="" />
+    <dl>
+     <dt>Display name</dt><dd></dd>
+     <dt>Username</dt><dd></dd>
+     <dt>Email</dt><dd></dd>
+     <dt>Spotify URI</dt><dd><a href=""></a></dd>
+     <dt>Link</dt><dd><a href=""></a></dd>
+     <dt>Profile Image</dt><dd></dd>
+    </dl>
+    <p><a href="/">Log in again</a></p>
+ </script>
 </body>
-
-
-<!-- Sandwich from: © Kosoff | <a href="http://www.dreamstime.com/">Dreamstime Stock Photos</a> & <a href="http://www.stockfreeimages.com/">Stock Free Images</a> -->
-
 </html>
