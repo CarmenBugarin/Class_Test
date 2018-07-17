@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[ ]:
-
-
 import sys
 import json
 from flask import Flask, request, redirect, g, render_template
